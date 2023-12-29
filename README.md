@@ -1,4 +1,4 @@
-# System MongoDB Models
+# TeqBench Dev
 
 ## Overview
 Collection of common template and prop files for inclusion into .NET projects. The intention of these files is to have common .NET project configuration settings in a central location for easy inclusion into a project via a submodule.
