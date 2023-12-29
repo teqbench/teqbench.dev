@@ -14,12 +14,6 @@ Collection of common template and prop files for inclusion into .NET projects. T
 ## Tooling
 - Text Editor, i.e. Visual Studio Code
 
-## Dependencies
-> [!NOTE]
-> Referenced/restored via the project file
-
-- none
-
 # Usage
 To be able to reference the prop and template files, a submodule must be added to a repository and the repository's .NET projects files updated with references to the props files. After adding the submodule, it must be initialized and/or updated.
 
