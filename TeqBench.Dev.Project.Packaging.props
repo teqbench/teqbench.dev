@@ -2,6 +2,7 @@
 <Project>
 	<PropertyGroup>
 		<IsPackable>true</IsPackable>
+		<PackOnBuild>true</PackOnBuild>
 		<PackageOutputPath>./publish</PackageOutputPath>
 	</PropertyGroup>
 </Project>
