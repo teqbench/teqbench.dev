@@ -21,21 +21,17 @@ Collection of common template and prop files for inclusion into .NET projects. T
 
 To be able to reference the prop and template files, a submodule must be added to a repository and the repository's .NET projects files updated with references to the props files. After adding the submodule, it must be initialized and/or updated.
 
-### Add Submodule
+### Add & Init Submodule
 
-To add submodule to a repo, from a terminal prompt, navigate to the repo root and issue the following command:
-
-```bash
-git submodule add https://github.com/teqbench/teqbench.dev.git .submodules/teqbench.dev
-```
-
-### Init Submodule
-
-Adding a submodule to a repo, does NOT pull/update the submodule repo locally; it's necessary to initialize and update the submodule once it's added to the repo.
+In order for a project to be able to reference these prop files, a submodule must be added to the project's repo and initialized. Adding a submodule to a repo, does NOT pull/update the submodule repo locally; it's necessary to initialize and update the submodule once it's added to the repo.
 
 From a terminal prompt, navigate to the repo root and issue the following commands:
 
 ```bash
+# First, add submodule to the repo
+git submodule add https://github.com/teqbench/teqbench.dev.git .submodules/teqbench.dev
+
+# Second, initialize the submodule with the following commands
 git submodule init
 git submodule update
 ```
