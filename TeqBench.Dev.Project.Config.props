@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
 	<PropertyGroup>
+		<Authors>TeqBench</Authors>
+		<Company>TeqBench</Company>
+		<Copyright>Copyright 2023 © TeqBench. All rights reserved.</Copyright>
+	</PropertyGroup>
+
+	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<NeutralLanguage>en-US</NeutralLanguage>
 	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	  <WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	  <DebugSymbols>true</DebugSymbols>
+	  <DebugType>portable</DebugType>
+	  <WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="publish\**" />
+      <None Remove="TestResults\**" />
+	  <None Remove=".editorconfig" />
+	  <None Remove=".gitignore" />
+	</ItemGroup>
 </Project>
