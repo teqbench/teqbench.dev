@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<PropertyGroup>
+		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+	</PropertyGroup>
+	<ItemGroup>
+		<EditorConfigFilesToCopy Include="$(SolutionDir)./.submodules/teqbench.dev/template.editorconfig" />
+		<GitIgnoreFilesToCopy Include="$(SolutionDir)./.submodules/teqbench.dev/template.gitignore" />
+	</ItemGroup>
+	<Target Name="CopyEditorConfig" BeforeTargets="BeforeBuild">
+		<Message Text="Copying the common .editorconfig file from '@(EditorConfigFilesToCopy)' to '$(SolutionDir)'" />
+		<Copy SourceFiles="@(EditorConfigFilesToCopy)" DestinationFiles="$(SolutionDir)./.editorconfig" SkipUnchangedFiles="true" UseHardlinksIfPossible="false" />
+	</Target>
+	<Target Name="CopyGitIgnore" BeforeTargets="BeforeBuild">
+		<Message Text="Copying the common .gitignore file from '@(GitIgnoreFilesToCopy)' to '$(SolutionDir)'" />
+		<Copy SourceFiles="@(GitIgnoreFilesToCopy)" DestinationFiles="$(SolutionDir)./.gitignore" SkipUnchangedFiles="true" UseHardlinksIfPossible="false" />
+	</Target>
+</Project>
