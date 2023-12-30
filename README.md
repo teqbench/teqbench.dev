@@ -48,7 +48,7 @@ git submodule update --remote
 
 ### Add Props Files To Project File
 
-#### .NET Sdk Project
+#### Example - .NET Sdk Project
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -71,7 +71,7 @@ git submodule update --remote
 </Project>
 ```
 
-#### .NET Test Project
+#### Example - .NET Test Project
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
