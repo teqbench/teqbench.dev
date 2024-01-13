@@ -112,6 +112,6 @@ git submodule update --remote
 
 - Prop files (and template files referenced via prop files) are imported via a .NET project's project file; no build, packaging, deployments are necessary for reference/inclusion.
 
-## License
+## Licensing
 
-&copy; 2023 TeqBench. All source code in this repository is only allowed for use by TeqBench; other usage by internal or external parties requires written consent from TeqBench.
+[License](https://github.com/teqbench/teqbench.docs/wiki/License)
